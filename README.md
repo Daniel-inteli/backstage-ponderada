@@ -13,4 +13,16 @@ Agora que o projeto do Backstage foi instalado, precisamos buildar o projeto par
 
 Para subir a imagem no Docker iremos utilizar o comando `docker image build . -f packages/backend/Dockerfile --tag backstage --no-cache`, e o comando `docker run -it -p 7007:7007 backstage` para executar o backstage de forma local na porta 7007
 
+![Docker build](/assets/docker%20build.png)
+
+![Docker run](/assets/docker%20run.png)
+
 ## Backstage
+
+Ao abrir no navegador o caminho http://localhost:7007/, irá aparecer a tela de login do Backstage, conforme imagem abaixo:
+
+![Backstage login](/assets/backstage-login.png)
+
+E após passar por essa página, irá entrar no menu inicial do Backstage e poderá utilizar da ferramenta no seu projeto. 
+
+![Backstage home](/assets/backstage-home.png)
